@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regler för schackturneringen</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f3f4f6;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #596275;
+      --accent: #2563eb;
+      --border: #dce1e8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: 38px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 32px rgba(23, 32, 51, 0.08);
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+    h2 { margin: 30px 0 10px; font-size: 1.25rem; color: var(--accent); }
+    p, ul, ol { margin-top: 8px; }
+    ul, ol { padding-left: 1.4rem; }
+    li + li { margin-top: 6px; }
+    .intro { color: var(--muted); margin-bottom: 24px; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .summary div {
+      padding: 14px;
+      border-radius: 12px;
+      background: #eff6ff;
+      text-align: center;
+    }
+    .summary strong { display: block; font-size: 1.15rem; }
+    blockquote {
+      margin: 30px 0 0;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: #eff6ff;
+      border-radius: 0 10px 10px 0;
+    }
+    @media (max-width: 600px) {
+      main { margin: 16px auto; padding: 24px 20px; }
+      .summary { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      main { width: 100%; margin: 0; border: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>♟️ Regler BWGambit Open</h1>
+
+    <div class="summary">
+      <div><strong>6 rundor</strong>Schweizisk lottning</div>
+      <div><strong>10+10</strong>10 min + 10 sek/drag</div>
+      <div><strong>1 / ½ / 0</strong>Vinst / remi / förlust</div>
+    </div>
+
+    <h2>Format och parning</h2>
+    <ul>
+      <li>Turneringen spelas över <strong>6 rundor</strong>.</li>
+      <li><strong>Schweizisk lottning:</strong> spelare matchas varje runda mot en spelare med samma poäng. Det prioriteras att inte möta samma person två gånger och färgerna balanseras.</li>
+      <li>Vinst ger <strong>1 poäng</strong>, remi <strong>½ poäng</strong> och förlust <strong>0 poäng</strong>.</li>
+    </ul>
+
+    <h2>Start av partiet</h2>
+    <ol>
+      <li>Skaka händer</li>
+      <li><strong>Svart startar Vits klocka.</strong></li>
+      <li>Vit gör första draget och trycker därefter på sin klocka.</li>
+    </ol>
+
+    <h2>Touch-piece</h2>
+    <ul>
+      <li>Rör du en av dina egna pjäser <strong>måste</strong> du flytta den, om den har ett lagligt drag.</li>
+      <li>Rör du en motståndarpjäs <strong>måste</strong> du ta den, om det är möjligt.</li>
+      <li>Vill du bara rätta till en pjäs, säg det innan du rör den.</li>
+    </ul>
+
+    <h2>Klockan</h2>
+    <ul>
+      <li>Gör ditt drag och tryck sedan på klockan med samma hand som du gjorde draget med.</li>
+      <li>När din tid når <strong>0</strong> förlorar du partiet.</li>
+      <li>Pausa endast klockan om något behöver redas ut med reglerna eller ett olagligt drag har gjorts.</li>
+    </ul>
+
+    <h2>Olagliga drag</h2>
+    <ul>
+      <li>Om din motståndare gör ett olagligt drag är det ditt ansvar som motståndare att säga till <strong>innan</strong> du gör ditt drag.</li>
+      <li>När ett olagligt drag upptäcks stoppar ni klockan.</li>
+      <li>I ett parti får en spelare göra 2 olagliga drag. I dessa fall läggs 1 minut till på motståndarens klocka</li>
+      <li>Vid det tredje olagliga draget i samma parti förlorar motståndaren matchen</li>
+      <li>Om din tid löper ut utan att du hinner göra ett drag när motståndaren gjort ett olagligt drag och du upptäcker det så återställs den förlorade tiden och ovan regler tillämpas</li>
+    </ul>
+
+    <h2>För att erbjuda remi (lika)</h2>
+    <ol>
+      <li>Gör ditt drag.</li>
+      <li>Säg exempelvis <strong>”Remi?”</strong></li>
+      <li>Tryck på klockan.</li>
+    </ol>
+    <p>Motståndaren kan acceptera eller fortsätta spela. Remianbudet gäller tills det accepteras, avslås muntligt eller motståndaren gör ett drag.</p>
+
+    <h2>Fair play</h2>
+    <ul>
+      <li>Spela schysst, hjälp inte andra pågående partier med reaktioner.</li>
+      <li>När partiet är klart rapporterar vinnaren resultatet. Vid remi rapporterar den som spelat vit.</li>
+      <li>Vid frågetecken gällande regler: pausa klockan och fråga Niklas eller Oskar.</li>
+    </ul>
+
+  </main>
+</body>
+</html>
